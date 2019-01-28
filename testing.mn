@@ -1,3 +1,11 @@
 @.begin
-print. Hello World
+print.not.Hello World
+set.str.variable_a.45
+print.use.variable_a
+nop
+nop
+set.int.valueA.50
+set.int.valueB.25
+add.use.new.total.valueA.valueB
+print.use.total
 @.end
