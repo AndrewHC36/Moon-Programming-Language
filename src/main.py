@@ -28,12 +28,36 @@ with open(fname, "r") as fobj:
                     STACK_FRAME[token[2]] = token[3]
                 elif token[1] == "int":
                     STACK_FRAME[token[2]] = int(token[3])
-            elif token[0] == "add":
+            elif token[0] == "add":  # add
                 if token[1] == "use":
                     if token[2] == "new":
                         STACK_FRAME[token[3]] = STACK_FRAME[token[4]]+STACK_FRAME[token[5]]
                     else:
                         STACK_FRAME[token[3]] = STACK_FRAME[token[3]]+STACK_FRAME[token[4]]
+                elif token[1] == "not":
+                    print(token[2])
+            elif token[0] == "sub":  # subtraction
+                if token[1] == "use":
+                    if token[2] == "new":
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[4]]-STACK_FRAME[token[5]]
+                    else:
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[3]]-STACK_FRAME[token[4]]
+                elif token[1] == "not":
+                    print(token[2])
+            elif token[0] == "mlp":  # multiply
+                if token[1] == "use":
+                    if token[2] == "new":
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[4]]*STACK_FRAME[token[5]]
+                    else:
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[3]]*STACK_FRAME[token[4]]
+                elif token[1] == "not":
+                    print(token[2])
+            elif token[0] == "div":  # division
+                if token[1] == "use":
+                    if token[2] == "new":
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[4]]/STACK_FRAME[token[5]]
+                    else:
+                        STACK_FRAME[token[3]] = STACK_FRAME[token[3]]/STACK_FRAME[token[4]]
                 elif token[1] == "not":
                     print(token[2])
             elif token[0] == "nop": pass

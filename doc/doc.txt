@@ -2,5 +2,6 @@ Moon Programming Language
 
 For now this language paradigm is what I called it as simple declarative language highly resembling Assembly.
 
-$ - use variable name
-    - can be either integer or string
+
+@.begin - Program Start/Begin/Resume
+@.end - Program Stop/End/Pause

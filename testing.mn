@@ -1,11 +1,22 @@
+This is the place where you can place the comments
+
 @.begin
-print.not.Hello World
-set.str.variable_a.45
-print.use.variable_a
-nop
-nop
-set.int.valueA.50
-set.int.valueB.25
-add.use.new.total.valueA.valueB
-print.use.total
+set.int.n1.10
+set.int.n2.20
+add.use.new.ADDED.n1.n2
+sub.use.new.MINUS.n1.n2
+mlp.use.new.MULTIPLY.n1.n2
+div.use.new.DIVIDE.n1.n2
 @.end
+and if you really want it in the middle too
+@.begin
+print.not.
+print.not.
+print.not. Here's the value below
+print.use.ADDED
+print.use.MINUS
+print.use.MULTIPLY
+print.use.DIVIDE
+@.end
+
+
